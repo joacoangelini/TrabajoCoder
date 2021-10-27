@@ -1,0 +1,77 @@
+@import "variables";
+main{
+    .article{
+        color: white;
+        text-align: center;
+    }
+    .equipos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.5rem;
+    margin: 1rem;
+   }
+   .equipos img{
+    width: 250px;
+    height: 150px;
+    border: 2px double #949494;
+    opacity: .4;
+   }
+   .equipos img:hover{
+    opacity: 1;
+    border: solid 2px white;
+    transition: 0.5s;
+   }
+   .scale{
+    transition: all 3s ease;
+    border: black 2px solid;
+   }
+   .scale:hover{
+    transform: scale(1.5, 1.5);
+   border-radius: 30%;
+   }
+.container{
+    align-items: center;
+    h2{
+        text-align: center;
+        padding: 1rem;
+        font-weight: bolder;
+    }
+    h3{
+        text-align: center;
+        padding: 10px;
+        font-weight: bolder;
+    }
+    }
+    .parches{width: 90%;
+    max-width: 1000px;
+margin: 20px auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 4fr 1fr;
+grid-template-areas: "primero segundo tercero";
+grid-gap: 10px;
+}
+@mixin parches ($grid, $bg){
+    grid-area: $grid;
+    background-color: $bg;
+    border-radius: 5px;
+    padding: 1rem;
+    color: white;
+}
+.primero{
+    @include parches (primero, $bgprimero)
+ }
+ .segundo{
+     @include parches (segundo, $bgsegundo)
+ }
+.tercero{
+    @include parches (tercero, $bgtercero)
+}
+h1{
+    color: white;
+    margin: 1px;
+    padding: 5px;
+}
+}
