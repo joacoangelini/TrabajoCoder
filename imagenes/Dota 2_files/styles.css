@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+/*BODY*/
+/*FOOTER*/
+footer {
+  width: 100%;
+  background-color: #212529;
+  color: white;
+}
+
+/*ESTOS SON LOS CONTENEDORES PADRES E HIJOS DEL FOOTER*/
+.container-footer-all {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.container-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-footer {
+  width: 100%;
+  background-color: #101010;
+}
+
+.f-icon, .h2title {
+  color: #fff;
+}
+
+/*COLUMNAS*/
+.column1, .column2, .column3 {
+  max-width: 400px;
+}
+
+.column1 h2, .column2 h2, .column3 h2 {
+  font-size: 22px;
+}
+
+.column1 p {
+  font-size: 14px;
+  color: #c7c7c7;
+}
+
+.column2 .row {
+  margin-top: 20px;
+  display: flex;
+}
+
+label.redes {
+  width: auto;
+}
+
+.redes a {
+  font-size: 14px;
+  color: #c7c7c7;
+  text-decoration: none;
+}
+
+.row i {
+  width: 20px;
+  height: 20px;
+}
+
+.row label {
+  margin-top: 0;
+  margin-left: 7px;
+}
+
+.row2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 label {
+  margin-top: auto;
+  margin-left: 5px;
+  max-width: 180px;
+}
+
+.ccontacto {
+  color: #c7c7c7;
+  font-size: 14px;
+}
+
+/*COPYRIGHT Y POLITICA ETC*/
+.copyright {
+  color: #c7c7c7;
+  font-size: 14px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 30px 10px 0px;
+}
+
+.information {
+  padding: 10px 0px 0px 0px;
+}
+
+.information a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.copytext {
+  padding: auto;
+  margin-left: 0;
+}
+
+.pfooter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+
+/*responsive del footer*/
+@media screen and (max-width: 1100px) {
+  /* BODY
+  .caja1{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+
+      grid-template-areas:
+      "numero1 "
+      "numero2 numero3"
+      "numero4 numero5"
+      "numero6";
+
+      grid-gap: 5px;
+  } */
+  /*FOOTER RESPONSIVE*/
+  .container-body {
+    flex-wrap: wrap;
+  }
+
+  .container-footer-all {
+    padding-top: 0;
+  }
+
+  .column1, .column2, .column3 {
+    margin-top: 20px;
+  }
+
+  .pfooter {
+    flex-wrap: wrap;
+  }
+}
+main {
+  background-image: url(/dota-2-art-background\ \(1\).jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.video {
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+video {
+  width: 80%;
+  overflow: hidden;
+}
+
+img.heroes {
+  width: 80%;
+  overflow: hidden;
+}
+
+.absolute {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 30;
+  padding: 1.5rem;
+}
+
+img.atributoheroe {
+  width: 32px;
+  height: 32px;
+}
+
+h1 {
+  font-family: "IM Fell English SC", serif;
+  font-size: 80px;
+  font-weight: 900;
+  z-index: 100;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+h1::after {
+  display: block;
+  width: 30%;
+  height: 10px;
+  content: "";
+  margin: auto;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a5e0f3;
+  margin-top: 5px;
+}
+
+.description {
+  color: #fff;
+}
+
+span.Bold {
+  font-weight: bold;
+}
+
+/*LOGO EN ESCRITORIO O LAPTOP*/
+img.logo {
+  width: 200px;
+  min-width: 200px;
+  height: 40px;
+  min-height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.8;
+  margin: 0 0 0 40px;
+}
+
+img.logo:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*esto es en movil*/
+/* img.logo{
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
+} */
+.elemento {
+  margin-right: 20px;
+  margin-left: 20PX;
+}
+
+.newbutton:hover {
+  background-color: #212529;
+  border-color: #212529;
+  color: #fff;
+}
+
+/*BOTON WSP Y STEAM*/
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+  transition: 0.5s;
+  opacity: 0.9;
+}
+
+.steambutton, .steambutton:hover {
+  text-decoration: none;
+  color: #fff;
+  width: auto;
+  height: auto;
+}
+
+.loginbutton {
+  text-decoration: none;
+  color: #212529;
+  width: auto;
+  height: auto;
+}
+
+.loginbutton:hover {
+  text-decoration: none;
+  color: #fff;
+  width: auto;
+  height: auto;
+}
+
+.mapa {
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.localizacion__iframe {
+  width: 90%;
+  padding-bottom: 50px;
+}
+
+.sets__heroes__item {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 5%;
+  border: 1px solid #92662F;
+  background-image: linear-gradient(to right bottom, #fec500, #ecb119, #d89e23, #c48c29, #af7b2d, #af7b2d, #af7b2d, #af7b2d, #c48c29, #d89e23, #ecb119, #fec500);
+  background-size: cover;
+  background-position: center;
+}
+
+.sets__heroes__item:hover {
+  background-color: transparent;
+  transition-duration: 0.5s;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a5e0f3;
+  margin-top: 5px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.card-img-top {
+  margin-top: 5%;
+  border-radius: 5%;
+}
+
+.card-text {
+  color: #fff;
+}
+
+.imagen__offcanvas {
+  width: 300px;
+}
+
+.titulonoticia {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 975px) {
+  .noticias {
+    height: 250px;
+    margin: auto;
+  }
+}
+.newsbox0, .newsbox1, .newsbox2, .newsbox3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

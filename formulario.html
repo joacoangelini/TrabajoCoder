@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta name="description" content="Formulario contacto">
     <meta name="keywords" content="Pais,Nombre, Mail, Correo, Contraseña, Apellido">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
     <link rel="icon" href="imagenes/favicon-32x32.png" type="image/ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Formulario</title>
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <header id="top">
-            <h1><a href="index.html"><img src="imagenes/logo.jpg" width="100px" alt=""DOTA2></a></h1>
+            <h1><a href="index.html"><img src="imagenes/logo.jpg" width="100px" alt="DOTA2"></a></h1>
         </header>
             <nav class="menu">
             <ul class="menu__ul">
@@ -34,10 +34,8 @@
                 </li>
             </ul>
         </nav>
-        <a class="position-absolute top-0 start-0 btn btn-danger btn-primary" href="https://store.steampowered.com/app/570/Dota_2/" target=”_blank” role="button">Descarga DOTA2</a>
-    <div class="clearfix" ></div>
     <main>
-        <H1 class="text-white">COMPLETA TUS DATOS</H1>
+        <h1 class="text-white">COMPLETA TUS DATOS</h1>
       <form action="">
           <fieldset>
               <legend class="text-white">FORMULARIO</legend>
@@ -46,12 +44,10 @@
                     <input type="text" name="Nombre"><br><br>
                     <label class="text-white" for="apellido">Completá tu apellido</label>
                     <input type="text" name=apellido><br><br>
-            
                 </div>
                 <div>
                     <label class="text-white" class="text-white"  for="email">Completá tu correo</label>
                     <input type="email" required><br><br>
-
                 </div>
                 <div>
                     <label class="text-white" for="pais">Nacionalidad</label>
@@ -61,7 +57,6 @@
                     <option value= "brasil">BRASIL</option>
                 </select>
                 <br><br>
-
                 </div>
                 <div class="text-white">
                     <label class="text-white" for="sexo">Genero</label>
@@ -78,12 +73,8 @@
                 <div>
                     <input type="submit" value="ENVIAR">
                     <br><br>
-                </div>
-            
+                </div>          
           </fieldset>
-
-
-
       </form>
     </div>
     </main>
